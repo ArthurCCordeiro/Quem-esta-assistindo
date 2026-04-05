@@ -1,67 +1,269 @@
 /* ========== RESET GLOBAL ========== */
 * {
-    margin: 0; /* Remove margem padrão */
-    padding: 0; /* Remove padding padrão */
-    box-sizing: border-box; /* Inclui border e padding no tamanho total */
+    margin: 0;
+    /* Remove margem padrão */
+    padding: 0;
+    /* Remove padding padrão */
+    box-sizing: border-box;
+    /* Inclui border e padding no tamanho total */
 }
 
 /* ========== ESTILO DO BODY ========== */
 body {
-    background: #0f0f0f; /* Fundo preto bem escuro (estilo Netflix) */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e elegante */
-    min-height: 100vh; /* Altura mínima de 100% da viewport */
-    display: flex; /* Ativa flexbox */
-    flex-direction: column; /* Organiza itens em coluna (de cima para baixo) */
-    align-items: center; /* Centraliza horizontalmente */
-    justify-content: center; /* Centraliza verticalmente */
-    color: #fff; /* Texto branco */
+    background: #0f0f0f;
+    /* Fundo preto bem escuro (estilo Netflix) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* Fonte moderna e elegante */
+    min-height: 100vh;
+    /* Altura mínima de 100% da viewport */
+    display: flex;
+    /* Ativa flexbox */
+    flex-direction: column;
+    /* Organiza itens em coluna (de cima para baixo) */
+    align-items: center;
+    /* Centraliza horizontalmente */
+    justify-content: center;
+    /* Centraliza verticalmente */
+    color: #fff;
+    /* Texto branco */
 }
 
 /* ========== ESTILO DO TÍTULO ========== */
 h1 {
-    font-size: 3.5rem; /* Tamanho grande do título */
-    font-weight: 700; /* Texto bem boludo/bold */
-    margin-bottom: 60px; /* Espaço abaixo do título */
-    letter-spacing: 1px; /* Espaçamento entre letras */
-    text-transform: uppercase; /* Converte para maiúsculas */
+    font-size: 3.5rem;
+    /* Tamanho grande do título */
+    font-weight: 700;
+    /* Texto bem boludo/bold */
+    margin-bottom: 60px;
+    /* Espaço abaixo do título */
+    letter-spacing: 1px;
+    /* Espaçamento entre letras */
+    text-transform: uppercase;
+    /* Converte para maiúsculas */
 }
 
 /* ========== Estilo dos PERFIS ========== */
 .profiles {
-    display: flex; /* Ativa flexbox */
-    justify-content: center; /* Centraliza os perfis */
-    align-items: center; /* Centraliza itens */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave ao passar mouse */
-    cursor: pointer; /* Muda cursor para mão (clicável) */
-    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
-    list-style: none; /* Remove bullets/números de lista */
-    gap: 30px; /* Espaço entre imagem e nome */
+    display: flex;
+    /* Ativa flexbox */
+    justify-content: center;
+    /* Centraliza os perfis */
+    align-items: center;
+    /* Centraliza itens */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    /* Transição suave ao passar mouse */
+    cursor: pointer;
+    /* Muda cursor para mão (clicável) */
+    flex-wrap: wrap;
+    /* Permite quebra de linha em telas pequenas */
+    list-style: none;
+    /* Remove bullets/números de lista */
+    gap: 30px;
+    /* Espaço entre imagem e nome */
 }
 
 /* ========== EFEITO AO PASSAR MOUSE NOS PERFIS ========== */
-img:hover{
-    transform: scale(1.05); /* Aumenta o perfil em 5% */
-    border: 3px solid transparent; /* Borda transparente (aparece no hover) */
-    border-color: #e50914; /* Borda vermelha Netflix */
-    box-shadow: 0 0 20px #e50914; /* Brilho/sombra vermelha ao redor */
+img:hover {
+    transform: scale(1.05);
+    /* Aumenta o perfil em 5% */
+    border: 3px solid transparent;
+    /* Borda transparente (aparece no hover) */
+    border-color: #e50914;
+    /* Borda vermelha Netflix */
+    box-shadow: 0 0 20px #e50914;
+    /* Brilho/sombra vermelha ao redor */
 
 }
 
 /* ========== ESTILO DAS IMAGENS DOS PERFIS ========== */
 img {
-    width: 150px; /* Largura da imagem */
-    height: 150px; /* Altura da imagem */
-    border-radius: 50%; /* Cantos redondos - 50% deixa a imagem circular */
-    object-fit: cover; /* Cobre o espaço mantendo proporção */
-    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave da borda e sombra */
-    border: 3px solid transparent; /* Borda transparente que fica visível no hover */
+    width: 150px;
+    /* Largura da imagem */
+    height: 150px;
+    /* Altura da imagem */
+    border-radius: 50%;
+    /* Cantos redondos - 50% deixa a imagem circular */
+    object-fit: cover;
+    /* Cobre o espaço mantendo proporção */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    /* Transição suave da borda e sombra */
+    border: 3px solid transparent;
+    /* Borda transparente que fica visível no hover */
 }
 
 /* ========== ESTILO DO NOME DO PERFIL ========== */
 p {
-    font-size: 1.5rem; /* Tamanho do texto do nome */
-    font-weight: 500; /* Peso da fonte (semi-bold) */
-    text-align: center; /* Centraliza o texto */
-    min-width: 150px; /* Largura mínima para evitar deformação */
-    letter-spacing: 0.5px; /* Espaçamento entre letras */
+    font-size: 1.5rem;
+    /* Tamanho do texto do nome */
+    font-weight: 500;
+    /* Peso da fonte (semi-bold) */
+    text-align: center;
+    /* Centraliza o texto */
+    min-width: 150px;
+    /* Largura mínima para evitar deformação */
+    letter-spacing: 0.5px;
+    /* Espaçamento entre letras */
+}
+
+/* ========== RESPONSIVIDADE - DESKTOP GRANDE (1920px+) ========== */
+@media (min-width: 1920px) {
+    h1 {
+        font-size: 4.5rem;
+        /* Título bem grande */
+        margin-bottom: 80px;
+        /* Espaço generoso */
+    }
+
+    .profiles {
+        gap: 60px;
+        /* Espaço amplo entre perfis */
+    }
+
+    img {
+        width: 200px;
+        /* Imagens maiores */
+        height: 200px;
+    }
+
+    p {
+        font-size: 1.8rem;
+        /* Texto maior */
+        min-width: 200px;
+    }
+}
+
+/* ========== RESPONSIVIDADE - DESKTOP MÉDIO (1024px - 1919px) ========== */
+@media (min-width: 1024px) and (max-width: 1919px) {
+    h1 {
+        font-size: 4rem;
+        /* Título grande */
+        margin-bottom: 60px;
+    }
+
+    .profiles {
+        gap: 40px;
+        /* Espaço entre perfis */
+    }
+
+    img {
+        width: 150px;
+        /* Tamanho padrão */
+        height: 150px;
+    }
+
+    p {
+        font-size: 1.3rem;
+        /* Texto padrão */
+        min-width: 150px;
+    }
+}
+
+/* ========== RESPONSIVIDADE - TABLET GRANDE (768px - 1023px) ========== */
+@media (min-width: 768px) and (max-width: 1023px) {
+    h1 {
+        font-size: 2.8rem;
+        /* Título menor */
+        margin-bottom: 50px;
+    }
+
+    .profiles {
+        gap: 3rem;
+        /* Espaço reduzido */
+    }
+
+    img {
+        width: 130px;
+        /* Imagens menores */
+        height: 130px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        /* Texto reduzido */
+        min-width: 130px;
+    }
+}
+
+/* ========== RESPONSIVIDADE - TABLET PEQUENO/LANDSCAPE (600px - 767px) ========== */
+@media (min-width: 600px) and (max-width: 767px) {
+    h1 {
+        font-size: 2.2rem;
+        /* Título compacto */
+        margin-bottom: 40px;
+    }
+
+    .profiles {
+        gap: 25px;
+        /* Espaço compacto */
+    }
+
+    img {
+        width: 110px;
+        /* Imagens compactas */
+        height: 110px;
+    }
+
+    p {
+        font-size: 1rem;
+        /* Texto pequeno */
+        min-width: 110px;
+    }
+}
+
+/* ========== RESPONSIVIDADE - CELULAR GRANDE (480px - 599px) ========== */
+@media (min-width: 480px) and (max-width: 599px) {
+
+
+    h1 {
+        font-size: 1.8rem;
+        /* Título pequeno */
+        margin-bottom: 35px;
+    }
+
+    .profiles {
+        gap: 2.2rem;
+        /* Espaço mínimo */
+    }
+
+    img {
+        width: 95px;
+        /* Imagens muito pequenas */
+        height: 95px;
+    }
+
+    p {
+        font-size: 0.95rem;
+        /* Texto bem pequeno */
+        min-width: 95px;
+    }
+}
+
+/* ========== RESPONSIVIDADE - CELULAR PEQUENO (360px - 479px) ========== */
+@media (max-width: 479px) {
+    *{
+        margin: 2px;
+        box-sizing: border-box;
+    }
+    h1 {
+        font-size: 1.75rem;
+        /* Título mínimo */
+        margin-bottom: 25px;
+    }
+
+    .profiles {
+        gap: 2rem;
+        /* Espaço muito reduzido */
+    }
+
+    img {
+        width: 80px;
+        /* Imagens muito pequenas */
+        height: 80px;
+    }
+
+    p {
+        font-size: 0.85rem;
+        /* Texto bem reduzido */
+        min-width: 80px;
+    }
 }
