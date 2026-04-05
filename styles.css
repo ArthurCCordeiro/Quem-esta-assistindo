@@ -138,6 +138,22 @@ img {
     /* Borda transparente que fica visível no hover */
 }
 
+/* ========== ESTILO DO LOGO ========== */
+.logo {
+    width: 400px;
+    height: auto;
+    border-radius: 0;
+    object-fit: contain;
+    border: none;
+    margin-bottom: 40px;
+}
+
+.logo:hover {
+    transform: none;
+    border: none;
+    box-shadow: none;
+}
+
 /* ========== TEMA LIGHT MODE - PERFIS ========== */
 body.light-mode img:hover {
     border-color: #333; /* Borda escura no light mode */

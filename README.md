@@ -2,8 +2,6 @@
 
 **Interface de seleção de perfis inspirada em plataformas de streaming, desenvolvida para estudo de Front End.**
 
-![Screenshot do projeto](/Screenshots/image.png)
-
 ## ✨ Funcionalidades
 
 - Cards de perfil com fotos e hover effects
