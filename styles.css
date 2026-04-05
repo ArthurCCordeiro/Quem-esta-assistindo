@@ -1,0 +1,67 @@
+/* ========== RESET GLOBAL ========== */
+* {
+    margin: 0; /* Remove margem padrão */
+    padding: 0; /* Remove padding padrão */
+    box-sizing: border-box; /* Inclui border e padding no tamanho total */
+}
+
+/* ========== ESTILO DO BODY ========== */
+body {
+    background: #0f0f0f; /* Fundo preto bem escuro (estilo Netflix) */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fonte moderna e elegante */
+    min-height: 100vh; /* Altura mínima de 100% da viewport */
+    display: flex; /* Ativa flexbox */
+    flex-direction: column; /* Organiza itens em coluna (de cima para baixo) */
+    align-items: center; /* Centraliza horizontalmente */
+    justify-content: center; /* Centraliza verticalmente */
+    color: #fff; /* Texto branco */
+}
+
+/* ========== ESTILO DO TÍTULO ========== */
+h1 {
+    font-size: 3.5rem; /* Tamanho grande do título */
+    font-weight: 700; /* Texto bem boludo/bold */
+    margin-bottom: 60px; /* Espaço abaixo do título */
+    letter-spacing: 1px; /* Espaçamento entre letras */
+    text-transform: uppercase; /* Converte para maiúsculas */
+}
+
+/* ========== Estilo dos PERFIS ========== */
+.profiles {
+    display: flex; /* Ativa flexbox */
+    justify-content: center; /* Centraliza os perfis */
+    align-items: center; /* Centraliza itens */
+    transition: transform 0.3s ease, filter 0.3s ease; /* Transição suave ao passar mouse */
+    cursor: pointer; /* Muda cursor para mão (clicável) */
+    flex-wrap: wrap; /* Permite quebra de linha em telas pequenas */
+    list-style: none; /* Remove bullets/números de lista */
+    gap: 30px; /* Espaço entre imagem e nome */
+}
+
+/* ========== EFEITO AO PASSAR MOUSE NOS PERFIS ========== */
+img:hover{
+    transform: scale(1.05); /* Aumenta o perfil em 5% */
+    border: 3px solid transparent; /* Borda transparente (aparece no hover) */
+    border-color: #e50914; /* Borda vermelha Netflix */
+    box-shadow: 0 0 20px #e50914; /* Brilho/sombra vermelha ao redor */
+
+}
+
+/* ========== ESTILO DAS IMAGENS DOS PERFIS ========== */
+img {
+    width: 150px; /* Largura da imagem */
+    height: 150px; /* Altura da imagem */
+    border-radius: 50%; /* Cantos redondos - 50% deixa a imagem circular */
+    object-fit: cover; /* Cobre o espaço mantendo proporção */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave da borda e sombra */
+    border: 3px solid transparent; /* Borda transparente que fica visível no hover */
+}
+
+/* ========== ESTILO DO NOME DO PERFIL ========== */
+p {
+    font-size: 1.5rem; /* Tamanho do texto do nome */
+    font-weight: 500; /* Peso da fonte (semi-bold) */
+    text-align: center; /* Centraliza o texto */
+    min-width: 150px; /* Largura mínima para evitar deformação */
+    letter-spacing: 0.5px; /* Espaçamento entre letras */
+}
