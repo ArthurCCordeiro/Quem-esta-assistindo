@@ -26,6 +26,53 @@ body {
     /* Centraliza verticalmente */
     color: #fff;
     /* Texto branco */
+    transition: background 0.3s ease, color 0.3s ease; /* Transição suave para mudança de tema */
+}
+
+/* ========== TEMA LIGHT MODE ========== */
+body.light-mode {
+    background: #f5f5f5; /* Fundo branco/cinza claro */
+    color: #333; /* Texto escuro */
+}
+
+/* ========== BOTÃO DE TOGGLE DE TEMA ========== */
+.theme-toggle {
+    position: fixed; /* Posição fixa na tela */
+    top: 20px; /* Distância do topo */
+    right: 20px; /* Distância da direita */
+    background: rgba(0, 0, 0, 0.7); /* Fundo semi-transparente */
+    border: 2px solid #e50914; /* Borda vermelha Netflix */
+    border-radius: 50%; /* Botão circular */
+    width: 50px; /* Largura */
+    height: 50px; /* Altura */
+    cursor: pointer; /* Cursor de mão */
+    display: flex; /* Flexbox para centralizar ícone */
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: center; /* Centraliza horizontalmente */
+    transition: all 0.3s ease; /* Transições suaves */
+    z-index: 1000; /* Fica acima de outros elementos */
+}
+
+.theme-toggle:hover {
+    background: rgba(229, 9, 20, 0.9); /* Fundo vermelho no hover */
+    transform: scale(1.1); /* Aumenta ligeiramente */
+    box-shadow: 0 0 15px rgba(229, 9, 20, 0.5); /* Brilho vermelho */
+}
+
+.theme-icon {
+    font-size: 1.5rem; /* Tamanho do ícone */
+    transition: transform 0.3s ease; /* Transição suave */
+}
+
+/* ========== TEMA LIGHT MODE - BOTÃO ========== */
+body.light-mode .theme-toggle {
+    background: rgba(255, 255, 255, 0.9); /* Fundo branco semi-transparente */
+    border-color: #333; /* Borda escura */
+}
+
+body.light-mode .theme-toggle:hover {
+    background: rgba(51, 51, 51, 0.9); /* Fundo escuro no hover */
+    box-shadow: 0 0 15px rgba(51, 51, 51, 0.5); /* Brilho escuro */
 }
 
 /* ========== ESTILO DO TÍTULO ========== */
@@ -89,6 +136,12 @@ img {
     /* Transição suave da borda e sombra */
     border: 3px solid transparent;
     /* Borda transparente que fica visível no hover */
+}
+
+/* ========== TEMA LIGHT MODE - PERFIS ========== */
+body.light-mode img:hover {
+    border-color: #333; /* Borda escura no light mode */
+    box-shadow: 0 0 20px rgba(51, 51, 51, 0.6); /* Brilho escuro */
 }
 
 /* ========== ESTILO DO NOME DO PERFIL ========== */
